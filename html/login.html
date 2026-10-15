@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Login | Cosmic Jodi</title>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="planet" aria-hidden="true"></div>
+<div class="wrap">
+<header><a class="logo" href="index.html">Cosmic<span>Jodi</span></a><nav id="nav"></nav></header>
+<main>
+<div class="hero"><h1>Welcome back, traveller</h1><p>Enter your Cosmic ID to find your matches.</p></div>
+<div class="panel" style="max-width:460px"><h2>Login</h2><div class="form">
+  <div><label for="lId">Cosmic ID</label><input id="lId" autocomplete="off" placeholder="e.g. ARJUN-001" maxlength="20"></div>
+  <p class="hint">Demo: login with Arjun's Cosmic ID ARJUN-001</p>
+  <p class="err" id="lErr"></p>
+  <button class="primary" id="lGo">Login</button>
+  <a class="link" href="register.html">New here? Register</a>
+</div></div>
+</main>
+<footer>Powered by one laptop battery and a lot of hope. 💫</footer>
+</div>
+<div id="toast" role="status"></div>
+<script src="js/mock-server.js"></script>
+<script src="js/portraits.js"></script>
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

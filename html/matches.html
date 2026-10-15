@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matches | Cosmic Jodi</title>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="planet" aria-hidden="true"></div>
+<div class="wrap">
+<header><a class="logo" href="index.html">Cosmic<span>Jodi</span></a><nav id="nav"></nav></header>
+<main>
+  <div class="hero"><h1 id="mTitle">Your matches</h1><p>Filtered by your preferred partner. Change anything below, or just say it.</p></div>
+  <section class="panel" aria-labelledby="ft">
+    <h2 id="ft">Partner preferences</h2>
+    <div class="voicebar">
+      <button class="mic" id="mic" aria-label="Speak your preferences" title="Speak your preferences">🎙️</button>
+      <input id="say" type="text" placeholder="Say or type: handsome, 2 hands, 4 eyes, green" aria-label="Describe your ideal partner">
+      <button class="primary" id="go">Search</button>
+    </div>
+    <p class="status" id="status" aria-live="polite">Tap the microphone and say what you want in a partner.</p>
+    <div class="filters">
+      <div><label for="fg">Looking for</label><select id="fg"><option value="">Any</option><option value="m">Male</option><option value="f">Female</option></select></div>
+      <div><label for="fh">Hands</label><select id="fh"></select></div>
+      <div><label for="fe">Eyes</label><select id="fe"></select></div>
+      <div><label for="fl">Legs</label><select id="fl"></select></div>
+      <div><label for="fa">Antennae</label><select id="fa"></select></div>
+      <div><label for="fs">Skin colour</label><select id="fs"></select></div>
+    </div>
+    <div class="row"><button id="clear">Clear</button><button id="hello">🔊 Hear this page</button><label class="check"><input type="checkbox" id="strict">Perfect matches only</label></div>
+  </section>
+  <div class="sechead"><h2>Singles for you</h2><span id="count"></span></div>
+  <div class="grid" id="grid"></div>
+</main>
+<footer>Powered by one laptop battery and a lot of hope. 💫</footer>
+</div>
+<div id="toast" role="status"></div>
+<script src="js/mock-server.js"></script>
+<script src="js/portraits.js"></script>
+<script src="js/common.js"></script>
+<script src="js/matches.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chat | Cosmic Jodi</title>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="planet" aria-hidden="true"></div>
+<div class="wrap">
+<header><a class="logo" href="index.html">Cosmic<span>Jodi</span></a><nav id="nav"></nav></header>
+<main>
+<div class="hero"><h1 id="cName">Chat</h1><p id="cLang"></p></div>
+<div class="panel idea" id="cIdea"></div>
+<div class="panel chatbox">
+  <div class="msgs" id="cMsgs" aria-live="polite"></div>
+  <div class="cin"><button class="mic small" id="cMic" aria-label="Speak a message">🎙️</button><input id="cText" placeholder="Type or speak..." autocomplete="off"><button class="primary" id="cSend">Send</button></div>
+  <label class="check"><input type="checkbox" id="cAuto" checked>Read replies aloud</label>
+</div>
+<a class="link" href="my-matches.html">Back to my matches</a>
+</main>
+<footer>Powered by one laptop battery and a lot of hope. 💫</footer>
+</div>
+<div id="toast" role="status"></div>
+<script src="js/mock-server.js"></script>
+<script src="js/portraits.js"></script>
+<script src="js/common.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>

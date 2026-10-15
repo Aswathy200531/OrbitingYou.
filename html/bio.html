@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bio data | Cosmic Jodi</title>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="planet" aria-hidden="true"></div>
+<div class="wrap">
+<header><a class="logo" href="index.html">Cosmic<span>Jodi</span></a><nav id="nav"></nav></header>
+<main>
+  <div class="hero"><h1>Your bio data</h1><p>Tell us about yourself and your preferred partner. Matches are filtered by your preferences.</p></div>
+  <div class="cols">
+    <div class="panel"><h2>About me</h2><div class="form">
+      <div class="two"><div><label for="bGender">I am</label><select id="bGender"><option value="m">Male</option><option value="f">Female</option></select></div><div><label for="bAge">Age (cycles)</label><input id="bAge" type="number" min="18" max="999"></div></div>
+      <div class="two"><div><label for="bSpecies">Species</label><input id="bSpecies" placeholder="e.g. Glorbian"></div><div><label for="bPlanet">Home planet</label><input id="bPlanet" placeholder="e.g. Zeta-4"></div></div>
+      <div class="two"><div><label for="bHands">Hands</label><select id="bHands"></select></div><div><label for="bEyes">Eyes</label><select id="bEyes"></select></div></div>
+      <div class="two"><div><label for="bLegs">Legs</label><select id="bLegs"></select></div><div><label for="bAnt">Antennae</label><select id="bAnt"></select></div></div>
+      <div><label for="bSkin">Skin colour</label><select id="bSkin"></select></div>
+      <div><label for="bLang">My language</label><select id="bLang"></select></div>
+      <div><label for="bAbout">About me</label><textarea id="bAbout" rows="3" placeholder="Likes long walks on asteroid belts"></textarea></div>
+    </div></div>
+    <div class="panel"><h2>My preferred partner</h2><div class="form">
+      <div><label for="pGender">Looking for</label><select id="pGender"><option value="">Any</option><option value="m">Male</option><option value="f">Female</option></select></div>
+      <div class="two"><div><label for="pHands">Hands</label><select id="pHands"></select></div><div><label for="pEyes">Eyes</label><select id="pEyes"></select></div></div>
+      <div class="two"><div><label for="pLegs">Legs</label><select id="pLegs"></select></div><div><label for="pAnt">Antennae</label><select id="pAnt"></select></div></div>
+      <div><label for="pSkin">Skin colour</label><select id="pSkin"></select></div>
+      <p class="hint">Leave a field on Any if you are open-minded.</p>
+    </div></div>
+  </div>
+  <p class="err" id="bErr"></p><button class="primary" id="bSave">Save and find my matches</button>
+</main>
+<footer>Powered by one laptop battery and a lot of hope. 💫</footer>
+</div>
+<div id="toast" role="status"></div>
+<script src="js/mock-server.js"></script>
+<script src="js/portraits.js"></script>
+<script src="js/common.js"></script>
+<script src="js/bio.js"></script>
+</body>
+</html>

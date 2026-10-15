@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Register | Cosmic Jodi</title>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="planet" aria-hidden="true"></div>
+<div class="wrap">
+<header><a class="logo" href="index.html">Cosmic<span>Jodi</span></a><nav id="nav"></nav></header>
+<main>
+<div class="hero"><h1>Find your destined partner across the galaxy</h1><p>No internet on this planet? No problem. Register with your name and a Cosmic ID, then tell us who you are and who you are looking for.</p></div>
+<div class="panel" style="max-width:460px"><h2>Register</h2><div class="form">
+  <div><label for="rName">Your name</label><input id="rName" autocomplete="off"></div>
+  <div><label for="rId">Cosmic ID</label><input id="rId" autocomplete="off" placeholder="e.g. ARJUN-001" maxlength="20"></div>
+  <button class="link" id="rGen" type="button">Generate a Cosmic ID for me</button>
+  <p class="err" id="rErr"></p>
+  <button class="primary" id="rGo">Register</button>
+  <a class="link" href="login.html">Already registered? Login with your Cosmic ID</a>
+</div></div>
+</main>
+<footer>Powered by one laptop battery and a lot of hope. 💫</footer>
+</div>
+<div id="toast" role="status"></div>
+<script src="js/mock-server.js"></script>
+<script src="js/portraits.js"></script>
+<script src="js/common.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
